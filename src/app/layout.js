@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import News from "@/components/News";
+import { SessionProvider } from "next-auth/react";
+import Sessionwrapper from "@/components/Sessionwrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <Sessionwrapper>
+
     <html lang="en">
       <body className={inter.className}>
         <div className="flex justify-between max-w-8xl mx-auto  ">
@@ -30,5 +34,6 @@ export default function RootLayout({ children }) {
         </div>
       </body>
     </html>
+    </Sessionwrapper>
   );
 }
