@@ -17,7 +17,7 @@ const Sidebar = () => {
            
            
            </Link> 
-           <button className='bg-blue-400 text-white  rounded-full  hover:brightness-95 transition-all duration-200 w-60 h-9 shadow-md hidden xl:inline'>
+           <button className='bg-blue-400 text-white  rounded-full  hover:brightness-95 transition-all duration-200 w-60 h-9 shadow-md hidden xl:inline font:semibold'>
               Sign In
            </button>
     </div>
